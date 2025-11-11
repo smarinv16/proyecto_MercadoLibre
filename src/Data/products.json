@@ -1,5 +1,11 @@
 [
     {
+        "id": 1,
+        "name": "Carro",
+        "description": "Vehiculo hibrido",
+        "price": 10000,
+        "category": "Automotor",
+        "image": "carro.jpg"
 
     }
 ]
