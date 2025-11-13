@@ -112,7 +112,6 @@ const ProductForm: React.FC<ProductFormProps> =({product, onSave, onCancel})=>{
                         type="text"
                         value={formData.image}
                         onChange={handleChange('image')}
-                        required
                         placeholder="https://"
                     />
                 </div>
