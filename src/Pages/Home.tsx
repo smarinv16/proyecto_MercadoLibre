@@ -15,7 +15,7 @@ const Home: React.FC = ()=> {
     };
 
     const handleEdit=(product: Product) =>{
-        setEditingProduct(undefined);
+        setEditingProduct(product);
         setShowForm(true);
     };
     
