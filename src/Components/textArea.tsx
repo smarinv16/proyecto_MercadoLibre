@@ -4,7 +4,7 @@ interface textAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
     className?: string;
 }
 
-const textArea: React.FC<textAreaProps> = ({
+const TextArea: React.FC<textAreaProps> = ({
     rows = 3,
     className = '',
     ...props
@@ -17,4 +17,4 @@ const textArea: React.FC<textAreaProps> = ({
     );
 };
 
-export default textArea;  
+export default TextArea;  
