@@ -3,9 +3,55 @@
         "id": 1,
         "name": "Carro",
         "description": "Vehiculo hibrido",
-        "price": 10000,
+        "price": 100000000,
         "category": "Automotor",
         "image": "carro.jpg"
 
+    },
+        {
+        "id": 2,
+        "name": "Protatil Lenovo 15",
+        "description": "Computador portatil 32GB RAM, SSD 1TB",
+        "price": 5000000,
+        "category": "Tecnologia",
+        "image": "pc.jpg"
+
+    },
+        {
+        "id": 3,
+        "name": "Ipad Pro",
+        "description": "Ipad pro 256GB, 8GB RAM",
+        "price": 2500000,
+        "category": "Tecnologia",
+        "image": "ipad.jpg"
+
+    },
+        {
+        "id": 4,
+        "name": "Camiseta nike logo",
+        "description": "Camiseta en techfit corlor verde antitranspirante",
+        "price": 180000,
+        "category": "Ropa",
+        "image": "camiseta.jpg"
+
+    },
+        {
+        "id": 5,
+        "name": "tenis nike airmax",
+        "description": "tenis deportivos nike airmax color blanco",
+        "price": 650000,
+        "category": "Ropa",
+        "image": "tenis.jpg"
+
+    },
+        {
+        "id": 6,
+        "name": "cesto basura oficina",
+        "description": "Canasta de basura metalica con pintura electrostatica color negro",
+        "price": 100000,
+        "category": "Hogar",
+        "image": "cesto.jpg"
+
     }
+
 ]
