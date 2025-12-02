@@ -13,13 +13,26 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit }) => {
     const [searchQuery, setSearchQuery] = useState<string>("");
 
     useEffect(()=> {
-        setProducts(getProducts());
+        const fetchProducts = async () => {
+            try {
+                const data = await getProducts();
+                setProducts(data);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            }
+        };
+        fetchProducts();
     }, []);
 
-    const handleDelete = (id: number) => {
-        if (window.confirm("¿Estas seguro de que deseas eliminar este producto?")) {
-            deleteProduct(id);
-            setProducts(getProducts());
+    const handleDelete = async (id: number) => {
+        if (window.confirm("¿Estás seguro de que deseas eliminar este producto?")) {
+            try {
+                await deleteProduct(id);
+                const data = await getProducts();
+                setProducts(data);
+            } catch (error) {
+                console.error("Error deleting product:", error);
+            }
         }
     };
 
