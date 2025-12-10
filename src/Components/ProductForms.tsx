@@ -20,7 +20,7 @@ const ProductForm: React.FC<ProductFormProps> =({product, onSave, onCancel})=>{
         price: product?.price.toString() || '',
         category: product?.category || '',
         stock: product?.stock?.toString() || '',
-        image: product?.image || ''
+        imageUrl: product?.imageUrl || ''
     });
 
     const handleSubmit = async (e: React.FormEvent)=> {
@@ -32,7 +32,7 @@ const ProductForm: React.FC<ProductFormProps> =({product, onSave, onCancel})=>{
             price: parseFloat(formData.price),
             category: formData.category,
             stock: parseInt(formData.stock)||0,
-            image: formData.image || undefined
+            imageUrl: formData.imageUrl || undefined
         };
         try {
             if (product) {
@@ -129,8 +129,8 @@ const ProductForm: React.FC<ProductFormProps> =({product, onSave, onCancel})=>{
                     </label>
                     <Input
                         type="text"
-                        value={formData.image}
-                        onChange={handleChange('image')}
+                        value={formData.imageUrl}
+                        onChange={handleChange('imageUrl')}
                         placeholder="https://"
                     />
                 </div>
