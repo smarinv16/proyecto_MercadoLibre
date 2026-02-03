@@ -3,7 +3,7 @@ import type { Product } from "../Types/Products";
 
 //let products: Product[] = [...productsData];
 
-const API_BASE_URL = "https://unacmeliback-production.up.railway.app/api";
+const API_BASE_URL = "http://35.171.47.215:3000/api";
 
 
 export const getProducts = async (): Promise<Product[]> => {
