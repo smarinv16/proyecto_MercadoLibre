@@ -3,7 +3,7 @@ import type { Product } from "../Types/Products";
 
 //let products: Product[] = [...productsData];
 
-const API_BASE_URL = "http://35.171.47.215:3000/api";
+const API_BASE_URL = "https://drag-royalty-transport-emerging.trycloudflare.com/api";
 
 
 export const getProducts = async (): Promise<Product[]> => {
