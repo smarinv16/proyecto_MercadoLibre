@@ -3,7 +3,7 @@ import type { Product } from "../Types/Products";
 
 //let products: Product[] = [...productsData];
 
-const API_BASE_URL = "https://creates-river-climate-nuke.trycloudflare.com /api";
+const API_BASE_URL = "https://creates-river-climate-nuke.trycloudflare.com/api";
 
 
 export const getProducts = async (): Promise<Product[]> => {
